@@ -91,6 +91,18 @@ L15  E1  fake-profound kicker           the future isn't coming
 
 The scanner finds phrases and sentence shapes. It can't judge voice or context, and it misses reworded versions of the same move, so treat its output as a list of places to look.
 
+## Before and after
+
+| Before | After |
+| --- | --- |
+| **LinkedIn post.** Here's the thing nobody tells you about dashboards. It's not a tools problem. It's a trust problem. When finance stopped double-checking our numbers, meetings got 20 minutes shorter. Let that sink in. | Our dashboards had a trust problem. When finance stopped double-checking our numbers, meetings got 20 minutes shorter. |
+| **Email.** I hope this email finds you well! I just wanted to circle back on the proposal. It's worth noting that we're keen to move forward. Please don't hesitate to reach out if you have any questions. | Are you ready to sign off on the proposal? We'd like to move forward, so let me know if anything is holding it up. |
+| **Website.** No setup. No code. Just insights. Our cutting-edge platform empowers teams to unlock the full potential of their data. | Connect your data and get reports without writing code or setting anything up. *[Add one concrete result, such as how long the first report takes.]* |
+| **Report.** Studies show that automation may potentially reduce errors. The new process was rolled out in Q3, highlighting the team's commitment to quality. | Automation may reduce errors *[source needed: which study, and what did it find?]*. The team rolled out the new process in Q3. |
+| **Launch post (rewrite).** I built Ledgerly, an open-source tool for small finance teams that automates bank reconciliation and flags mismatches, and most tools in this space are expensive and hard to set up. | I couldn't find a reconciliation tool that was affordable and easy to set up, so I built Ledgerly. It matches bank transactions automatically and flags anything that doesn't line up. It's open source and made for small finance teams. |
+
+Nothing gets invented. When a draft is missing a number or a source, the edit flags it for you to fill in. [`examples.md`](skills/humanize/references/examples.md) lists which pattern each change fixes.
+
 ## What it catches
 
 The full library is in [`patterns.md`](skills/humanize/references/patterns.md). The short version:
@@ -113,6 +125,7 @@ skills/humanize/SKILL.md
 skills/humanize/references/patterns.md
 skills/humanize/references/contexts.md
 skills/humanize/references/checklist.md
+skills/humanize/references/examples.md
 skills/humanize/scripts/scan.py
 skills/voice-profile/SKILL.md
 tests/test_scan.py

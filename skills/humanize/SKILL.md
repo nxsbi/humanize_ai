@@ -3,7 +3,7 @@ name: humanize
 description: Edit, audit, or draft writing so it reads like a specific person wrote it, removing recognizable AI phrasing and structural habits while keeping the writer's meaning and voice. Use when the user asks to humanize text, remove AI slop, make copy sound natural or less robotic, check whether a draft "sounds like AI", or invokes humanize.
 metadata:
   short-description: Make AI-assisted writing sound like a real person
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Humanize
@@ -37,7 +37,7 @@ After a rewrite, **What changed** describes the moves you made (new opening, spl
 
 ## Before you touch anything
 
-1. Read [references/patterns.md](references/patterns.md), the full pattern library.
+1. Read [references/patterns.md](references/patterns.md), the full pattern library, and skim [references/examples.md](references/examples.md) to calibrate how much to change.
 2. If the user gave you a voice profile or writing samples, or a `voice-profile.md` (made by the `voice-profile` skill) sits in the working folder, read it. The profile overrides the defaults in this skill where they conflict. If there is no profile, infer the voice from the draft itself.
 3. Check [references/contexts.md](references/contexts.md) for the genre at hand (email, LinkedIn, technical doc, executive summary, resume, web copy). Genre changes what counts as a problem.
 4. Read the whole draft before editing. Pin down:

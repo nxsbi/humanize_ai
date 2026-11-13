@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 (2026-11-12)
+
+- Five before-and-after examples (LinkedIn, email, website, report, launch rewrite) in `references/examples.md`, linked from `SKILL.md` for calibration and shown in the README.
+
 ## 1.1.0 (2026-11-12)
 
 - `humanize` now has two edit strengths. Light (default) fixes patterns only. Rewrite keeps every fact but changes delivery: opens with why instead of a definition, turns claims about competitors into the writer's own motive, splits stuffed sentences, uses spoken verbs, and moves what the reader cares about forward.
