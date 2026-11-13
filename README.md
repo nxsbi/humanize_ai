@@ -1,4 +1,4 @@
-# humanize_ai
+# Humanize AI language (humanize_ai)
 
 Skills that make AI-assisted writing sound like the person who is supposed to have written it.
 
