@@ -1,0 +1,22 @@
+{
+  "name": "humanize-ai",
+  "description": "Writing skills that remove recognizable AI patterns and keep the writer's own voice.",
+  "owner": {
+    "name": "Nexus BI",
+    "url": "https://github.com/nxsbi"
+  },
+  "plugins": [
+    {
+      "name": "humanize-ai",
+      "source": "./",
+      "description": "Make AI-assisted writing sound direct, specific, and like you.",
+      "version": "1.0.0",
+      "author": { "name": "Nexus BI", "url": "https://github.com/nxsbi" },
+      "homepage": "https://github.com/nxsbi/humanize_ai",
+      "repository": "https://github.com/nxsbi/humanize_ai",
+      "license": "MIT",
+      "keywords": ["writing", "editing", "humanize", "ai-slop", "voice"],
+      "category": "productivity"
+    }
+  ]
+}
