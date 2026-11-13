@@ -17,10 +17,13 @@ The pattern library applies everywhere, but genre changes what counts as a probl
 - The hook should be a specific claim, number, or moment, not a tee-up ("I need to talk about something").
 - Keep the writer's story and opinions. Do not convert a personal post into a corporate one.
 - Hashtags: a few at the end if the writer uses them. None inline.
+- Launch and "I built" posts: open with why it exists (A6), say "free" or who it is for early, and keep credits and license for the end.
+- Links: LinkedIn tends to show posts with external links to fewer people. When a post ends in a URL, suggest moving it to the first comment, as a note after the draft rather than inside it.
 
 ## Technical documentation, READMEs, and runbooks
 
 - Clarity beats voice. Uniform structure (same heading pattern, same step format) is a feature here, not template slop.
+- A definition opener (A6) is the right start for a README or reference page. Do not swap it for a personal story.
 - Cut "In this section we will explore", "Let's dive in", "It's worth noting that", and "Simply" before a step that is not simple.
 - Use imperative steps: "Run `make build`", not "You will want to run".
 - Keep precise technical words even if they appear in D1 (robust, framework, leverage in finance).

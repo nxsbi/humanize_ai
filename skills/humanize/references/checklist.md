@@ -26,10 +26,19 @@ Run this after every edit or draft. Answer each item pass or fail. Fix every fai
 
 ## Patterns
 
-- [ ] Framing (A): no secret-insight setups, tee-ups, staged candor, generic scene-setting, or assistant residue.
-- [ ] Structure (B): no binary reframes, negative stacks, fake Q&A, colon reveals, fragment stacks, forced triads, template paragraphs, false balance, or empty ranges.
+- [ ] Framing (A): no secret-insight setups, tee-ups, staged candor, generic scene-setting, assistant residue, or (outside docs) definition openers.
+- [ ] Structure (B): no binary reframes, negative stacks, fake Q&A, colon reveals, fragment stacks, forced triads, template paragraphs, false balance, empty ranges, or stuffed sentences.
 - [ ] Rephrased variants checked at sentence and paragraph level. Swapping words did not leave the same staged move in place.
-- [ ] Claims (C): no importance labels, hollow "-ing" analysis, reaction narration, vague authority, hedge stacks, or unbacked sales promises.
+- [ ] Claims (C): no importance labels, hollow "-ing" analysis, reaction narration, vague authority, hedge stacks, unbacked sales promises, or straw competitors.
+
+## Rewrite strength (only when a rewrite was requested or warranted)
+
+- [ ] The opening gives the reason or problem before the definition, if the source supports one.
+- [ ] Claims about other tools or people became the writer's own motive, a named comparison, or were cut. No invented backstory.
+- [ ] One idea per sentence; no appositive-plus-list-plus-"and" pile-ups.
+- [ ] What the reader cares about (price, audience, benefit) comes before credits and implementation details.
+- [ ] Every fact from the original is still there.
+- [ ] Any platform tip is a note after the draft, not inside it.
 - [ ] Vocabulary (D): stock words, filler phrases, and empty adverbs removed unless precise or part of the voice. No synonym cycling.
 - [ ] Endings (E): no kicker, recap, or engagement bait. The piece ends on a concrete point or next action.
 - [ ] Formatting (F): no em dashes (or at most one or two in long pieces), no unrequested emojis, no decorative bold, no bullets or headings that should be prose.

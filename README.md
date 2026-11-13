@@ -8,7 +8,7 @@ Most "humanizer" prompts remove the obvious tells ("delve", "It's not X, it's Y"
 
 | Skill | What it does |
 | --- | --- |
-| [`humanize`](skills/humanize/SKILL.md) | Edits a draft, audits it without rewriting, or writes a new one. Checks 30+ patterns in six groups and adjusts for the genre (email, LinkedIn, docs, reports, resumes, web copy). |
+| [`humanize`](skills/humanize/SKILL.md) | Edits a draft, audits it without rewriting, or writes a new one. Checks 35+ patterns in six groups and adjusts for the genre (email, LinkedIn, docs, reports, resumes, web copy). |
 | [`voice-profile`](skills/voice-profile/SKILL.md) | Reads samples of your writing and saves a short `voice-profile.md` that `humanize` follows. |
 | [`scan.py`](skills/humanize/scripts/scan.py) | A standard-library Python scanner that flags patterns with line numbers. Works on its own, in CI, or as a first pass for the skill. |
 
@@ -40,6 +40,13 @@ Or just ask your agent: `Install the humanize and voice-profile skills from http
 
 ```text
 /humanize
+<paste draft>
+```
+
+**Loosen it up.** The default pass is light: it fixes patterns and leaves the rest. If the draft is clean but stiff, ask for a rewrite. It keeps every fact and changes the delivery: it opens with why instead of a definition, splits stuffed sentences, and moves what the reader cares about forward.
+
+```text
+/humanize rewrite this so it sounds like me talking:
 <paste draft>
 ```
 

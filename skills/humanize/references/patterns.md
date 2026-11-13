@@ -66,6 +66,16 @@ Chat-assistant habits that leak into finished writing.
 
 **Fix:** delete. Finished writing does not talk about itself being written.
 
+### A6. Definition openers
+
+Starting with a dictionary-style description of the thing instead of why anyone should care.
+
+- "I built Acme, an open-source platform that enables teams to..."
+- "Project X is a comprehensive solution designed to..."
+- "This post covers..."
+
+**Fix:** open with the problem, the reason, or the moment that started it, when the source gives you one ("I got tired of rebuilding the same report every Monday, so I built Acme."). Put the definition in a short second sentence. In reference docs and READMEs a definition opener is fine (see contexts.md).
+
 ---
 
 ## B. Structure: sentence and paragraph shapes
@@ -156,6 +166,14 @@ Reflexive both-sides hedging that commits to nothing.
 
 **Fix:** name who or what is actually covered, or drop the range.
 
+### B10. Stuffed sentences
+
+One sentence carrying an appositive, a colon list, and a trailing "and" clause, so the reader has to hold three ideas at once.
+
+- "I built X, an open-source set of tools for Y that removes Z: A, B, and C, and it also does D."
+
+**Fix:** one idea per sentence. Split at the appositive and at the "and". Keep the colon list only if it is the point of the sentence.
+
 ---
 
 ## C. Claims: how importance and evidence are handled
@@ -226,6 +244,16 @@ Promises with no mechanism.
 - "Seamless, end-to-end, holistic solution."
 
 **Fix:** name the action and the supported outcome: "Cuts month-end close from nine days to four."
+
+### C7. Straw competitors
+
+Making your thing look good by describing everyone else's as bad, with nothing to back it up.
+
+- "Most tools in this space are clunky and slow."
+- "Unlike other solutions, ours actually works."
+- "Most tools that do this hand back text that sounds like nobody."
+
+**Fix:** turn it into the writer's own motive when that is implied ("I got tired of tools that..."), name the specific alternative and the specific difference, or cut it. A first-person reason needs no evidence; a claim about a whole market does.
 
 ---
 
