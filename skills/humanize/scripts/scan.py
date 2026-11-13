@@ -6,6 +6,7 @@ Usage:
     cat draft.md | python scan.py
     python scan.py draft.md --json
     python scan.py draft.md --fail-on 1     # exit 1 if 1+ findings (for CI)
+    python scan.py draft.md --max-words 25  # sentence length limit (0 = off)
 
 Standard library only. Findings are leads for a human or model editor,
 not verdicts: the scanner cannot judge voice, genre, or intent, and it
@@ -150,7 +151,17 @@ def _strip_code(text: str) -> str:
     return text
 
 
-def scan(text: str) -> list[Finding]:
+WORD = re.compile(r"[A-Za-z0-9'’]+")
+SENTENCE_END = re.compile(r"(?<=[.!?])[\"”')\]*]*\s+")
+
+
+def _prose(line: str) -> str:
+    """Strip markdown list, quote, and heading markers and link targets from one line."""
+    line = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)
+    return re.sub(r"^\s*(?:[-*+]\s+(?:\[[ xX]\]\s+)?|\d+[.)]\s+|>\s*|#{1,6}\s+)", "", line)
+
+
+def scan(text: str, max_words: int = 20) -> list[Finding]:
     clean = _strip_code(text)
     findings: list[Finding] = []
     seen: set[tuple[int, str, str]] = set()
@@ -171,6 +182,18 @@ def scan(text: str) -> list[Finding]:
         dashes = raw.count("—") + len(re.findall(r"\s--\s", raw))
         if dashes:
             findings.append(Finding(i, "F", "em dash", f"{dashes} em dash(es)"))
+        if "–" in raw:
+            findings.append(Finding(i, "F", "en dash", f"{raw.count(chr(0x2013))} en dash(es)"))
+        prose = _prose(raw)
+        if ";" in prose:
+            at = prose.index(";")
+            findings.append(Finding(i, "F", "semicolon", _excerpt(prose[max(0, at - 40): at + 20])))
+        if max_words and not re.match(r"^\s*(?:\|?\s*:?-{3,}|```)", raw):
+            for cell in prose.split("|"):
+                for sent in SENTENCE_END.split(cell):
+                    n = len(WORD.findall(sent))
+                    if n > max_words:
+                        findings.append(Finding(i, "F", "long sentence", f"{n} words: {_excerpt(sent, 60)}"))
         if re.match(r"^\s*#{1,6}\s.*[\U0001F300-\U0001FAFF☀-➿]", raw):
             findings.append(Finding(i, "F", "emoji in heading", _excerpt(raw)))
         bolds = re.findall(r"(?<!^)(?<![-*] )\*\*[^*\n]+\*\*", raw.strip())
@@ -185,11 +208,13 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("file", nargs="?", help="text or markdown file (default: stdin)")
     ap.add_argument("--json", action="store_true", help="emit JSON")
+    ap.add_argument("--max-words", type=int, default=20, metavar="N",
+                    help="flag sentences longer than N words (default 20, 0 = off)")
     ap.add_argument("--fail-on", type=int, default=0, metavar="N",
                     help="exit with status 1 when there are N or more findings (0 = never)")
     args = ap.parse_args(argv)
 
-    # Windows consoles often default to a legacy code page; never crash on emoji.
+    # Windows consoles often default to a legacy code page. Never crash on emoji.
     for stream in (sys.stdout, sys.stderr):
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(errors="replace")
@@ -200,12 +225,12 @@ def main(argv: list[str] | None = None) -> int:
     else:
         text = sys.stdin.read()
 
-    findings = scan(text)
+    findings = scan(text, max_words=args.max_words)
 
     if args.json:
         print(json.dumps([asdict(f) for f in findings], indent=2, ensure_ascii=False))
     elif not findings:
-        print("No listed patterns found. That is not proof the text is clean; read it.")
+        print("No listed patterns found. That is not proof the text is clean. Read it.")
     else:
         width = len(str(findings[-1].line))
         for f in findings:

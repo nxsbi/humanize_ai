@@ -47,6 +47,16 @@ class FlagsSlop(unittest.TestCase):
         f = [x for x in scan.scan("First line here.\n\nThe best part: it learns.") if x.pattern == "B4"]
         self.assertEqual(f[0].line, 3)
 
+    def test_en_dash_and_semicolon(self):
+        found = {f.label for f in scan.scan("We ran it 2019–2021; it held up.")}
+        self.assertTrue({"en dash", "semicolon"} <= found)
+
+    def test_long_sentence(self):
+        long = " ".join(["word"] * 21) + "."
+        self.assertIn("long sentence", {f.label for f in scan.scan(long)})
+        self.assertEqual(scan.scan(long, max_words=0), [])
+        self.assertEqual(scan.scan(" ".join(["word"] * 20) + "."), [])
+
 
 class LeavesCleanTextAlone(unittest.TestCase):
     def test_plain_prose(self):
@@ -57,6 +67,9 @@ class LeavesCleanTextAlone(unittest.TestCase):
             "That took two months."
         )
         self.assertEqual(scan.scan(text), [])
+
+    def test_semicolon_in_link_target_is_ignored(self):
+        self.assertEqual(scan.scan("See [the guide](http://x.com/a;b) here."), [])
 
     def test_code_is_ignored(self):
         self.assertEqual(scan.scan("Run `leverage --robust` first.\n\n```\nutilize()\n```\n"), [])

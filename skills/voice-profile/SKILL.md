@@ -1,6 +1,6 @@
 ---
 name: voice-profile
-description: Build a reusable written-voice profile from samples of someone's own writing, so later edits and drafts sound like them instead of like generic AI prose. Use when the user wants Claude to "learn my voice", "write like me", capture a house style, or create or update a voice-profile.md for the humanize skill.
+description: Build a reusable written-voice profile from samples of someone's own writing. Later edits and drafts then sound like them instead of generic AI prose. Use when the user wants Claude to "learn my voice", "write like me", or capture a house style. Also use to create or update a voice-profile.md for the humanize skill.
 metadata:
   short-description: Capture how a specific person writes
   version: "1.0.0"
@@ -8,15 +8,15 @@ metadata:
 
 # Voice profile
 
-Generic "sound human" rules only get writing halfway. The other half is sounding like *this* person. This skill reads samples of someone's real writing and produces a short, concrete profile that the `humanize` skill (or any drafting task) can follow.
+Generic "sound human" rules only get writing halfway. The other half is sounding like *this* person. This skill reads samples of someone's real writing and writes a short, concrete profile. The `humanize` skill, or any drafting task, can then follow it.
 
 ## Gather samples
 
-Ask for 3 to 10 pieces the person wrote themselves with little or no AI help, ideally across the formats they care about (emails, posts, docs). Around 1,500 words total is enough; more helps with rare traits. Accept pasted text or file paths.
+Ask for 3 to 10 pieces the person wrote with little or no AI help. Ideally they span the formats the person cares about (emails, posts, docs). Around 1,500 words total is enough. More helps with rare traits. Accept pasted text or file paths.
 
-Exclude text that was heavily AI-edited; it teaches the profile the very habits you are trying to remove. If the user is unsure about a sample, ask, or weight it lower.
+Exclude text that was heavily AI-edited. It teaches the profile the very habits you are trying to remove. If the user is unsure about a sample, ask, or weight it lower.
 
-If the user cannot supply samples, offer a short interview instead: their audience, formality, contractions, words they love and hate, a sentence they wrote and are proud of. Build a lighter profile from that and mark it as interview-based.
+If the user cannot supply samples, offer a short interview instead. Ask about their audience, formality, contractions, and words they love and hate. Ask for a sentence they wrote and are proud of. Build a lighter profile from that and mark it as interview-based.
 
 ## Analyze
 
@@ -81,4 +81,4 @@ Every **Do** and **Don't** line should be specific enough to check. "Write clear
 - The example sentences are exact quotes.
 - The profile is short enough to paste into a prompt.
 
-Then tell the user where it was saved and that `humanize` will pick it up when they mention it or when it sits in the working folder.
+Then tell the user where you saved it. `humanize` picks it up when they mention it or when it sits in the working folder.

@@ -29,7 +29,7 @@ A sentence whose only job is to advertise the next sentence.
 - "Which brings me to the real point."
 - "I want to be precise here, because this is where people trip up."
 
-**Fix:** delete it and say the thing. Announcing that you are about to be specific adds nothing; being specific does.
+**Fix:** delete it and say the thing. Announcing that you are about to be specific adds nothing. Being specific does.
 
 ### A3. Throat-clearing and staged candor
 
@@ -74,7 +74,7 @@ Starting with a dictionary-style description of the thing instead of why anyone 
 - "Project X is a comprehensive solution designed to..."
 - "This post covers..."
 
-**Fix:** open with the problem, the reason, or the moment that started it, when the source gives you one ("I got tired of rebuilding the same report every Monday, so I built Acme."). Put the definition in a short second sentence. In reference docs and READMEs a definition opener is fine (see contexts.md).
+**Fix:** open with the problem, the reason, or the moment that started it, when the source gives you one. For example: "I got tired of rebuilding the same report every Monday, so I built Acme." Put the definition in a short second sentence. In reference docs and READMEs a definition opener is fine (see contexts.md).
 
 ---
 
@@ -168,7 +168,7 @@ Reflexive both-sides hedging that commits to nothing.
 
 ### B10. Stuffed sentences
 
-One sentence carrying an appositive, a colon list, and a trailing "and" clause, so the reader has to hold three ideas at once.
+One sentence carrying an appositive, a colon list, and a trailing "and" clause. The reader has to hold three ideas at once.
 
 - "I built X, an open-source set of tools for Y that removes Z: A, B, and C, and it also does D."
 
@@ -253,7 +253,7 @@ Making your thing look good by describing everyone else's as bad, with nothing t
 - "Unlike other solutions, ours actually works."
 - "Most tools that do this hand back text that sounds like nobody."
 
-**Fix:** turn it into the writer's own motive when that is implied ("I got tired of tools that..."), name the specific alternative and the specific difference, or cut it. A first-person reason needs no evidence; a claim about a whole market does.
+**Fix:** turn it into the writer's own motive when that is implied ("I got tired of tools that..."). Or name the specific alternative and the specific difference. Or cut it. A first-person reason needs no evidence. A claim about a whole market does.
 
 ---
 
@@ -261,7 +261,7 @@ Making your thing look good by describing everyone else's as bad, with nothing t
 
 ### D1. Stock AI vocabulary
 
-Avoid by default. Keep a word when it names something precise (a "robust" estimator in statistics, a "framework" that is literally a software framework).
+Avoid by default. Keep a word when it names something precise. A "robust" estimator in statistics is fine, and so is a "framework" that is literally software.
 
 delve, tapestry, realm, beacon, landscape (figurative), ecosystem (figurative), journey (figurative), navigate (figurative), testament, pivotal, paramount, multifaceted, meticulous, intricate, nuanced (as filler), transformative, revolutionary, game-changer, paradigm shift, cutting-edge, state-of-the-art, ever-evolving, seamless, holistic, synergy, robust, leverage, utilize, facilitate, foster, empower, streamline, elevate, embark, harness, supercharge, unlock, unleash, spearhead, bolster, underscore, showcase, "move the needle", "dive deep", "deep dive", "this changes everything", "this is huge"
 
@@ -325,14 +325,16 @@ A final line that turns the point into an aphorism or mic drop.
 
 ## F. Formatting and punctuation
 
-- **Em dashes.** Not the default connector. In short copy, none. In long pieces, one or two at most, only where nothing else works. Replace with a period, comma, colon, parentheses, or "and"/"but".
+- **Em dashes and en dashes.** None. Replace with a period, comma, colon, parentheses, or "and"/"but". Write number ranges as "2019 to 2021".
+- **Semicolons.** None. Split into two sentences, or join with "and" or "but".
+- **Long sentences.** Keep each sentence to 20 words or fewer. Split at the "and", the "which", or the appositive.
 - **Emojis.** None unless requested or native to the writer's voice. Never as bullet markers or heading decorations by default.
 - **Decorative bold.** Do not bold random phrases mid-sentence. Bold is for labels and scannable key terms.
 - **Bullet creep.** Two or three related sentences read better as prose than as bullets.
 - **Heading creep.** No headings over sections that are one or two sentences long.
 - **Title Case Everywhere.** Use sentence case for headings unless the house style says otherwise.
 - **Colons.** Sentence case after a colon unless grammar, a proper noun, a title, or code requires a capital.
-- **Curly vs straight quotes.** Match what the rest of the document uses; do not mix.
+- **Curly vs straight quotes.** Match what the rest of the document uses. Do not mix.
 
 ---
 

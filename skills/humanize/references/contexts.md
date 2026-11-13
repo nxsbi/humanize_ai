@@ -5,26 +5,26 @@ The pattern library applies everywhere, but genre changes what counts as a probl
 ## Business email
 
 - Put the ask or the answer in the first two sentences. The subject line should say the same thing.
-- Cut "I hope this email finds you well", "Just following up", "Please don't hesitate to reach out", and "Thanks in advance" unless the writer's voice relies on them.
+- Cut "I hope this email finds you well", "Just following up", and "Please don't hesitate to reach out". Cut "Thanks in advance" too, unless the writer's voice relies on these.
 - One topic per email when possible. If there are several asks, number them.
 - Sign-offs stay short. "Thanks," is fine.
 - Contractions are usually fine. Match the writer.
 
 ## LinkedIn and social posts
 
-- This is where B1 to B5 (reframes, negative stacks, fake Q&A, colon reveals, fragment stacks) and E1 to E3 (kickers, recaps, engagement bait) cluster. Check them hard.
+- B1 to B5 cluster here: reframes, negative stacks, fake Q&A, colon reveals, and fragment stacks. So do E1 to E3: kickers, recaps, and engagement bait. Check them hard.
 - One-sentence paragraphs are a platform convention, not slop on their own. Slop is when every one of them is a dramatic fragment.
 - The hook should be a specific claim, number, or moment, not a tee-up ("I need to talk about something").
 - Keep the writer's story and opinions. Do not convert a personal post into a corporate one.
 - Hashtags: a few at the end if the writer uses them. None inline.
-- Launch and "I built" posts: open with why it exists (A6), say "free" or who it is for early, and keep credits and license for the end.
-- Links: LinkedIn tends to show posts with external links to fewer people. When a post ends in a URL, suggest moving it to the first comment, as a note after the draft rather than inside it.
+- Launch and "I built" posts: open with why it exists (A6). Say "free" or who it is for early. Keep credits and license for the end.
+- Links: LinkedIn tends to show posts with external links to fewer people. When a post ends in a URL, suggest moving it to the first comment. Put that tip in a note after the draft, not inside it.
 
 ## Technical documentation, READMEs, and runbooks
 
 - Clarity beats voice. Uniform structure (same heading pattern, same step format) is a feature here, not template slop.
 - A definition opener (A6) is the right start for a README or reference page. Do not swap it for a personal story.
-- Cut "In this section we will explore", "Let's dive in", "It's worth noting that", and "Simply" before a step that is not simple.
+- Cut "In this section we will explore", "Let's dive in", and "It's worth noting that". Cut "Simply" before a step that is not simple.
 - Use imperative steps: "Run `make build`", not "You will want to run".
 - Keep precise technical words even if they appear in D1 (robust, framework, leverage in finance).
 - Code, commands, and identifiers are never edited for style.
@@ -41,9 +41,9 @@ The pattern library applies everywhere, but genre changes what counts as a probl
 
 - Resume bullets start with a strong past-tense verb and end with a concrete result or scope. No "Responsible for".
 - Cut D1 words that every resume uses: spearheaded, leveraged, drove, passionate, results-oriented, dynamic, synergy.
-- Do not invent metrics. If a bullet has no number, flag it and ask; do not fabricate one.
+- Do not invent metrics. If a bullet has no number, flag it and ask. Do not fabricate one.
 - Cover letters should sound like a person talking to a person. Cut "I am writing to express my interest in" and "I believe I would be a great fit". Open with why this role, this company.
-- Follow the writer's preference on contractions. Many people avoid them in resumes; ask or infer from samples.
+- Follow the writer's preference on contractions. Many people avoid them in resumes. Ask, or infer from samples.
 
 ## Website and marketing copy
 
@@ -54,7 +54,7 @@ The pattern library applies everywhere, but genre changes what counts as a probl
 
 ## Academic and research writing
 
-- Hedging is part of the genre; do not strip warranted qualifiers. Do strip hedge stacking (C5).
+- Hedging is part of the genre. Do not strip warranted qualifiers. Do strip hedge stacking (C5).
 - Citations are mandatory for claims. C4 findings are errors, not style notes.
 - Passive voice is acceptable in methods sections when the actor is irrelevant.
 - Keep field-specific terminology.
@@ -63,4 +63,4 @@ The pattern library applies everywhere, but genre changes what counts as a probl
 
 - Shortest form that answers the question. No greeting preamble, no "Great question".
 - No headings or bullet lists for a three-sentence answer.
-- Match the channel's tone; casual is fine.
+- Match the channel's tone. Casual is fine.
